@@ -83,3 +83,23 @@
 .slick-next:before {
 	color: red;
 }
+
+#car-head {
+	width: 100vw;
+	height: 35vw;
+}
+
+.slick-img img {
+	width: 350px;
+	min-height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+	.slick-img img {
+		width: 242px;
+	}
+
+	#car-head {
+		height: 60vw;
+	}
+}

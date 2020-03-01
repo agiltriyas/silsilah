@@ -81,19 +81,47 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-caption" style="text-align:end;padding-top:15px;font-size: 1.5vw;right:25px">
-                            <a href="<?= base_url('silsilah') ?>" class=" text-decoration-none text-white">Silsilah</a>
+
+                            <!-- <a href="<?= base_url('silsilah') ?>" class=" text-decoration-none text-white">Silsilah</a>
                             &nbsp;
                             <?php if ($this->session->has_userdata('namaUser')) : ?>
                                 <a href="<?= base_url('auth') ?>" class="text-decoration-none text-white">Admin</a>
                             <?php else : ?>
                                 <a href="<?= base_url('auth') ?>" class="text-decoration-none text-white">Login</a>
-                            <?php endif; ?>
+                            <?php endif; ?> -->
+
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <a class="navbar-brand" href="#"></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    </ul>
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="<?= base_url('silsilah') ?>" class=" text-decoration-none text-white h5">Silsilah</a>
+                                        </li>
+                                        &nbsp;&nbsp;
+                                        </br>
+                                        <li class="nav-item">
+                                            <?php if ($this->session->has_userdata('namaUser')) : ?>
+                                                <a href="<?= base_url('auth') ?>" class="text-decoration-none text-white h5">Admin</a>
+                                            <?php else : ?>
+                                                <a href="<?= base_url('auth') ?>" class="text-decoration-none text-white h5">Login</a>
+                                            <?php endif; ?>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+
                         </div>
                         <div class="carousel-caption d-md-block">
                             <div style="font-size: 5vw;padding-top:20px"><?= $home['title']; ?></div>
                             <div style="font-size: 3vw;margin-top:-10px"><?= $home['subtitle']; ?></div>
                         </div>
-                        <img src=" <?= base_url('assets/img/profile/backhome.jpg') ?>" class="" alt=" ..." style="width:100vw;height:35vw">
+                        <img id="car-head" src=" <?= base_url('assets/img/profile/backhome.jpg') ?>" class="" alt=" ...">
                     </div>
                 </div>
             </div>
@@ -114,31 +142,31 @@
 
             <div class='slick-img'>
                 <div>
-                    <img src="<?= base_url('assets/img/homepict/') . $home['pict1'] ?>"" width=" 350" height="200">
+                    <img src="<?= base_url('assets/img/homepict/') . $home['pict1'] ?>"" >
                 </div>
                 <div>
-                    <img src="<?= base_url('assets/img/homepict/') . $home['pict2'] ?>"" width=" 350" height="200">
+                    <img src=" <?= base_url('assets/img/homepict/') . $home['pict2'] ?>"">
                 </div>
                 <div>
-                    <img src="<?= base_url('assets/img/homepict/') . $home['pict3'] ?>"" width=" 350" height="200">
+                    <img src="<?= base_url('assets/img/homepict/') . $home['pict3'] ?>"" >
                 </div>
                 <div>
-                    <img src="<?= base_url('assets/img/homepict/') . $home['pict4'] ?>"" width=" 350" height="200">
+                    <img src=" <?= base_url('assets/img/homepict/') . $home['pict4'] ?>"">
                 </div>
                 <div>
-                    <img src="<?= base_url('assets/img/homepict/') . $home['pict5'] ?>"" width=" 350" height="200">
+                    <img src="<?= base_url('assets/img/homepict/') . $home['pict5'] ?>"" >
                 </div>
             </div>
-            <div class="row mt-5 text-center">
-                <div class="col-lg">
-                    <a href="<?= base_url('silsilah') ?>" class="h3 font-weight-bold text-decoration-none text-dark">Silsilah</a>
+            <div class=" row mt-5 text-center">
+                    <div class="col-lg">
+                        <a href="<?= base_url('silsilah') ?>" class="h3 font-weight-bold text-decoration-none text-dark">Silsilah</a>
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div class="row text-center">
-                <div class="col-lg">
-                    <div id="chart-container" class='img-responsive'></div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-lg">
+                        <div id="chart-container" class='img-responsive'></div>
+                    </div>
                 </div>
-            </div>
-            <?php $a = $this->session->userdata('namaUser'); ?>
-            <div id="cekses" data-ses="<?= $a ?>"></div>
+                <?php $a = $this->session->userdata('namaUser'); ?>
+                <div id="cekses" data-ses="<?= $a ?>"></div>
