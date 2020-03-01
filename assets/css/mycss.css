@@ -1,0 +1,85 @@
+.silsilah a:hover {
+	color: white;
+	/* text-decoration: none; */
+}
+
+.listhome li {
+	background-color: transparent;
+	color: white;
+	border: 0px;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+#modalcsv {
+	position: absolute;
+	top: 12%;
+	right: 0;
+	margin-right: 6%;
+	width: 25%;
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+	#csvbutton {
+		display: none;
+	}
+
+}
+
+#filterkel {
+	margin-bottom: -15px;
+	width: 85%;
+}
+
+.cardkeg a:hover,
+.cardkeg2 a:hover,
+.cardkeg3 a:hover {
+	text-decoration: none;
+}
+
+.orgchart .second-menu-icon {
+	transition: opacity .5s;
+	opacity: 0;
+	right: -5px;
+	top: -5px;
+	z-index: 2;
+	color: rgba(68, 157, 68, 0.5);
+	font-size: 18px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.orgchart .second-menu-icon:hover {
+	color: #449d44;
+}
+
+.orgchart .node:hover .second-menu-icon {
+	opacity: 1;
+}
+
+.orgchart .second-menu-icon-create {
+	transition: opacity .5s;
+	opacity: 0;
+	right: 120px;
+	top: -5px;
+	z-index: 2;
+	color: rgba(65, 135, 240, 0.459);
+	font-size: 18px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.orgchart .second-menu-icon-create:hover {
+	color: #205de294;
+}
+
+.orgchart .node:hover .second-menu-icon-create {
+	opacity: 1;
+}
+
+
+
+.slick-prev:before,
+.slick-next:before {
+	color: red;
+}
